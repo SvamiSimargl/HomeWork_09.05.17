@@ -1,0 +1,25 @@
+package Домашка_про_массивы.lvl1;
+
+import java.util.Scanner;
+//Задаем размер, заполняем массив из консоли и выводим его значения
+public class Task2 {
+    public static void main(String[] args) {
+
+        System.out.println("Введите число для задания размера масива.");
+        Scanner scanner = new Scanner(System.in);
+
+        int length = scanner.nextInt();
+
+        int[] mas = new int[length];
+
+        System.out.println("Заполните массив целыми числами.");
+        
+        for (int i = 0; i < mas.length; i++) {
+            int index = scanner.nextInt();
+            mas[i] = index;
+        }
+        for (int a : mas) {
+            System.out.print(a + " ");
+        }
+    }
+}
