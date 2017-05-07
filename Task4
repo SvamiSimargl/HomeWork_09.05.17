@@ -1,0 +1,21 @@
+package Домашка_про_массивы.lvl1;
+
+import java.util.Scanner;
+//подсчитывем символ 'b' в введенном слове
+public class Task4 {
+    public static void main(String[] args) {
+        System.out.println("Введите строку для подсчета символа 'b' в ней.");
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.next();
+        char t [] = str.toCharArray();
+        int count = 0;
+        for (int i= 0; i < t.length; i++){
+            if (t[i] == 'b')
+            count++;
+
+        }
+
+        System.out.println("В введенной строке " + count + " 'b' символов.");
+
+    }
+}
